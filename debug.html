@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="debug.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="debug.js" defer></script>
+</head>
+<body style="background-color: white !important;">
+    <header style="padding: 0 !important; background-color: white !important; display: flex !important; align-content:center; justify-content: space-between">
+        <h1 style="padding-left: 30px;"><img src="https://masithuthukeholdings.co.za/wp-content/uploads/2021/08/MASI_HOLDINGS-LOGO_199.png" width="100%" height="100px" alt="masithuthuke Holdings"></h1>
+        <h3 class="headings" style="color: #000000 !important; padding-top: 40px;"></h3>
+    </header>
+    <main>
+        <div class="book-container">
+            <div class="left-page">
+                <div class="dropdown">
+                    <label for="projects">Select Project:</label>
+                    <select id="projects">
+                        <option value="project1">Service Seta Work Readiness</option>
+                        <option value="project2">FRA Learnership</option>
+                        <option value="project3">Ingwe Learnership</option>
+                        <option value="project4">AET Training</option>
+                        <option value="project5">Institute of African Royalty</option>
+                        <option value="project6">FASSET Digital Skills</option>
+                        <option value="project7">IDC Township Energy Fund</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button onclick="changeChartType('bar')">Bar Graph</button>
+                    <button onclick="changeChartType('line')">Line Graph</button>
+                    <button onclick="changeChartType('pie')">Pie Chart</button>
+                </div>
+                <div class="buttons">
+                    <div class="table-container">
+                        <table id="riskTable" class="data-table">
+                            <caption>Risks</caption>
+                            <thead>
+                                <tr>
+                                    <th>Risk</th>
+                                    <th>Comments</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Rows will be dynamically added -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-container">
+                        <table id="siteVisitTable" class="data-table">
+                            <caption>Site Visits</caption>
+                            <thead>
+                                <tr>
+                                    <th>Site Visits</th>
+                                    <th>Comments</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Rows will be dynamically added -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="dashboard">
+                    <div class="chart-container">
+                        <canvas id="progressChart"></canvas>
+                        <p id="progressAmount" class="total-amount"></p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="paymentsChart"></canvas>
+                        <p id="paymentsAmount" class="total-amount"></p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="performanceChart"></canvas>
+                        <p id="performanceAmount" class="total-amount"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="update-form">
+                    <h2>Update Progress</h2>
+                    <label for="progressExpected">Progress Expected (%):</label>
+                    <input type="number" id="progressExpected" min="0" max="100">
+                    <label for="progressReceived">Progress Received (%):</label>
+                    <input type="number" id="progressReceived" min="0" max="100">
+                    
+                    <label for="paymentsExpected">Total Amount Expected (R):</label>
+                    <input type="number" id="paymentsExpected">
+                    <label for="paymentsReceived">Total Received (R):</label>
+                    <input type="number" id="paymentsReceived">
+                    
+                    <label for="risks">Risks (#):</label>
+                    <input type="number" id="risks">
+                    <label for="riskComments">Risk Comments (comma-separated):</label>
+                    <input type="text" id="riskComments">
+                    
+                    <label for="performanceExpected">Performance/Deliverables Expected (%):</label>
+                    <input type="number" id="performanceExpected" min="0" max="100">
+                    <label for="performanceReceived">Performance/Deliverables Received (%):</label>
+                    <input type="number" id="performanceReceived" min="0" max="100">
+                    
+                    <label for="siteVisits">Site Visits (#):</label>
+                    <input type="number" id="siteVisits">
+                    <label for="visitComments">Visit Comments (comma-separated):</label>
+                    <input type="text" id="visitComments">
+                    
+                    <button onclick="updateDashboard()">Update</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

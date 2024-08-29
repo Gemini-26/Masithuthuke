@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masithuthuke Holdings</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="debug.css">
+    <script src="debug.js" defer></script>
+    <style>
+        body {
+            background-color: #d4edda; /* Light green background */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /*background-image: url('foundation-banner.jpg'); /* Replace with your image path */
+            background-repeat: unset;
+            background-size: 40%; /* Adjust size of the background image */
+            background-position: center; /* Adjust position of the background image */
+            opacity: 0.9999999999; /* Adjust opacity for the watermark effect */
+        }
+
+        header, nav {
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 150px); /* Adjust height considering header and nav */
+            text-align: center;
+            color: green; /* Text color for the paragraph */
+        }
+
+        .slideshow-container {
+            position:center;
+            max-width:fit-content; /* Adjust as needed */
+            height: 400px; /* Adjust height as needed */
+            overflow: hidden; /* Hide overflow to create the slide effect */
+            margin-bottom: 100px; /* Space between slideshow and buttons */
+        }
+
+        .slide {
+            display:contents;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 87%;
+            height: 95%;
+        }
+
+        .slide img {
+            max-width: 100%; /* Ensure images don't exceed container width */
+            max-height: 100%; /* Ensure images don't exceed container height */
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+    <link rel="stylesheet" href="debug.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="debug.js" defer></script>
+</head>
+<body style="background-color: white !important;">
+    <header style="padding: 0 !important; background-color: white !important; display: flex !important; align-content:center; justify-content: space-between">
+        <h1 style="padding-left: 30px;"><img src="https://masithuthukeholdings.co.za/wp-content/uploads/2021/08/MASI_HOLDINGS-LOGO_199.png" width="100%" height="100px" alt="masithuthuke Holdings"></h1>
+        <h3 class="headings" style="color: #000000 !important; padding-top: 40px;"></h3>
+        <h3 class="headings" style="color: #000000 !important; padding-top: 40px;">👨🏽‍💻IT - ADMINISTRATION⚙️</h3>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="loging.html">SWITCH USER</a></li>
+            <li class="dropdown"><a href="#">MAINTENANCE</a>
+                <ul class="dropdown-content">
+                    <li><a href="IT_Admin.html">IT ADMIN </a></li>
+                </ul>
+            </li>            
+            </li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <div class="container-Thando">
+            <div class="left-page-thando">
+                <div class="dropdown">
+                    <label for="projects">Select Project:</label>
+                    <select id="projects">
+                        <option value="project1">Service Seta Work Readiness</option>
+                        <option value="project2">FRA Learnership</option>
+                        <option value="project3">Ingwe Learnership</option>
+                        <option value="project4">AET Training</option>
+                        <option value="project5">Institute of African Royalty</option>
+                        <option value="project6">FASSET Digital Skills</option>
+                        <option value="project7">IDC Township Energy Fund</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button onclick="changeChartType('bar')">Bar Graph</button>
+                    <button onclick="changeChartType('line')">Line Graph</button>
+                    <button onclick="changeChartType('pie')">Pie Chart</button>
+
+                </div>
+                <div class="buttons">
+                    
+                </div>
+             </div>
+             <div class="dashboard-thando">
+                 <div class="chart-container">
+                     <canvas id="progressChart"></canvas>
+                     <p id="progressAmount" class="total-amount"></p>
+                 </div>
+                 <div class="chart-container">
+                     <canvas id="paymentsChart"></canvas>
+                     <p id="paymentsAmount" class="total-amount"></p>
+                 </div>
+                 <div class="chart-container">
+                     <canvas id="performanceChart"></canvas>
+                     <p id="performanceAmount" class="total-amount"></p>
+                 </div>
+             </div>
+     </div>
+        
+    </main>
+    <body>
+    <!-- Your existing HTML content -->
+
+    <!-- Background audio -->
+    
+</body>
+
+</body>
+</html>

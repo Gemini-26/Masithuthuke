@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    
+}
+
+.menu{
+    box-shadow:white;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.book-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.container-lebo{
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 8px;
+    overflow: auto;
+    background-color:white;
+    box-shadow:white;
+}
+.container-Thando {
+    border: 1px solid #ccc;
+    max-height: 100%;
+    max-width: 80%;
+    background-color:white;
+    box-shadow:white;
+}
+.left-page-thando {
+    max-height: 100%;
+    max-width:100%;
+    flex: 10;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.left-page-lebo {
+    flex: 10;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.right-page-lebo {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.update-form-lebo{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.left-page {
+    flex: 10;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-page {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.dashboard-thando {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.dashboard-lebo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chart-container {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.chart-container canvas {
+    max-width: 100%;
+}
+
+.update-form {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.update-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.update-form input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.update-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.update-form button:hover {
+    background-color: #45a049;
+}
+
+.tables-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: black;
+}
+
+.table-wrapper {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.table-wrapper:last-child {
+    margin-right: 0;
+}
+
+.data-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.data-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.data-table td input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.tr{
+    color:white;
+    background-color: #333;
+    padding: 5px;
+}
+th{
+    color:white;
+    padding: 5px;
+    background-color: #333;
+    border-style: double;
+
+}
+.empty{
+    background-color: white;
+}
+.pd{
+    text-align: center;
+}
+.lc{
+    background-color: #333;
+}
+td{
+    border-style: double;
+}

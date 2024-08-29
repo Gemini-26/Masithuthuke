@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Masithuthuke Holdings</title>
+        <link rel="stylesheet" href="CSS.css">
+        <link rel="stylesheet" href="debug.css">
+        <script src="debug.js" defer></script>
+        <style>
+            body {
+                background-color: white; /* Light green background */
+                margin: 0;
+                font-family: Arial, sans-serif;
+                /*background-image: url('foundation-banner.jpg'); /* Replace with your image path */
+                background-repeat: unset;
+                background-size: 40%; /* Adjust size of the background image */
+                background-position: center; /* Adjust position of the background image */
+                opacity: 0.9999999999; /* Adjust opacity for the watermark effect */
+            }
+    
+            header, nav {
+                width: 100%;
+            }
+    
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: calc(100vh - 150px); /* Adjust height considering header and nav */
+                text-align: center;
+                color: green; /* Text color for the paragraph */
+            }
+        </style>
+        <script src="Javascript.js" defer></script>
+        <link rel="stylesheet" href="debug.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="debug.js" defer></script>
+    </head>
+<body>
+    <header style="padding: 0 !important; background-color: white !important; display: flex !important; align-content:center; justify-content: space-between">
+        <h1 style="padding-left: 30px;"><img src="https://masithuthukeholdings.co.za/wp-content/uploads/2021/08/MASI_HOLDINGS-LOGO_199.png" width="100%" height="100px" alt="masithuthuke Holdings"></h1>
+        <h3 class="headings" style="color: #000000 !important; padding-top: 40px;">WELCOME - LEBO💕</h3>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="Lebo.html">HOME</a></li>
+            <li><a href="Loging.html">User</a></li>
+            <li class="dropdown"><a href="#">Company Profile</a>
+                <ul class="dropdown-content" 
+                style="list-style: none !important">
+                    <li><a href="Prof_1.html">Company Registration </a></li>
+                    <li><a href="Prof_BBBEE.html">BBBEE </a></li>
+                    <li><a href="Prof_Tax.html">Tax Certificate </a></li>
+                    <li><a href="Prof_CSD.html">CSD </a></li>
+                    <li><a href="Prof_Holdings.html">Holdings Profile </a></li>
+                    <li><a href="Prof_Foundation.html">Foundation Profile </a></li>
+                    <li><a href="Prof_Learning.html">Learning Profile </a></li>
+                    <li><a href="Prof_UIF.html">UIF registration </a></li>
+                    <li><a href="Prof_AUDITED.html">Audited Financials </a></li>
+                    <li><a href="Prof_Memberships.html">Memberships </a></li>
+                    <li><a href="Prof_Board.html">Governing Board </a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Accreditations</a>
+                <ul class="dropdown-content">
+                    <li><a href="Accred_QCTO.html">QCTO </a></li>
+                    <li><a href="Accred_SACAI.html">SACAI </a></li>
+                    <li><a href="Accred_UMALUSI.html">UMALUSI </a></li>
+                    <li><a href="Accred_DHET.html">DHET </a></li>
+                    <li><a href="Accred_IEB.html">IEB </a></li>
+                    <li><a href="Accred_SERVICES_SETA.html">SERVICES SETA </a></li>
+                    <li><a href="Accred_MICT.html">MICT </a></li>
+                    <li><a href="Accred_AGRI_SETA.html">AGRI SETA </a></li>
+                    <li><a href="Accred_ETDP_SETA.html">ETDP SETA </a></li>
+                    <li><a href="Accred_W&R_SETA.html">W&R SETA </a></li>
+                    <li><a href="Accred_BANK_SETA.html">BANK SETA </a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">HR</a>
+                <ul class="dropdown-content">
+                    <li><a href="HR_Recruitment_Selection.html">Recruitment & Selection </a></li>
+                    <li><a href="HR_Onboarding_Induction.html">Onboarding/Induction </a></li>
+                    <li><a href="HR_Exit_Interview.html">Exit Interview </a></li>
+                    <li><a href="HR_Administration.html">HR Administration </a></li>
+                    <li><a href="HR_Opp_Structure.html">Operational Structure </a></li>
+                    <li><a href="HR_Change_Management.html">Change Management </a></li>
+                    <li><a href="HR_QMS.html">QMS </a></li>
+                    <li><a href="HR_Strategy.html">Strategy </a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Projects</a>
+                <ul class="dropdown-content">
+                    <li><a href="project_Service_SETA_Work_Readiness.html">Services Seta Work Readiness</a></li>
+                    <li><a href="project_FRA_Learnership.html">FRA Learnerships</a></li>
+                    <li><a href="project_Ingwe_Learnership.html">Ingwe Learnerships</a></li>
+                    <li><a href="project_AET_Training.html">AET Training</a></li>
+                    <li><a href="project_Institute_Of_African_Royalty.html">Institute of African Royalty</a></li>
+                    <li><a href="project_FASSET_Digital_Skills.html">FASSET Digital Skills</a></li>
+                    <li><a href="project_IDC_Township_Energy_Fund.html">IDC Township Energy Fund</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Sales</a>
+                <ul class="dropdown-content">
+                    <li><a href="sales_Applications.html">Applications </a></li>
+                    <li><a href="sales_Client_Engagement.html">Client Engagement </a></li>
+                    <li><a href="sales_Marketing.html">Marketing </a></li>
+                    <li><a href="sales_Business_Growth.html">Business Growth </a></li>
+                    <li><a href="sales_Data_Analysis.html">Data Analysis </a></li>
+                    <li><a href="sales_Special_Projects.html">Special Projects (Leads) </a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Assessor & Moderator</a>
+                <ul class="dropdown-content">
+                    <li><a href="assessor_QCTO.html">QCTO </a></li>
+                    <li><a href="assessor_SACAI.html">SACAI </a></li>
+                    <li><a href="assessor_UMALUSI.html">UMALUSI </a></li>
+                    <li><a href="assessor_DHET.html">DHET </a></li>
+                    <li><a href="assessor_IEB.html">IEB </a></li>
+                    <li><a href="assessor_Services_Seta.html">SERVICES SETA </a></li>
+                    <li><a href="assessor_MICT.html">MICT </a></li>
+                    <li><a href="assessor_AGRI_Seta.html">AGRI SETA </a></li>
+                    <li><a href="assessor_ETDP_Seta.html">ETDP SETA </a></li>
+                    <li><a href="assessor_W&R_Seta.html">W&R SETA </a></li>
+                    <li><a href="assessor_Bank_Seta.html">BANK SETA </a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">LMS</a>
+                <ul class="dropdown-content">
+                    <li><a href="LMS_Inhouse_Courses.html">Inhouse Courses</a></li>
+                    <li><a href="LMS_Learners.html">Learners</a></li>
+                    <li><a href="LMS_Custom_Course.html">Create Customized Course</a></li>
+                    <li><a href="LMS_Training_Tools.html">Training Tools</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Archives</a>
+                <ul class="dropdown-content">
+                    <li><a href="Archive_Complete_Projects.html">Completed Projects</a></li>
+                    <li><a href="Archive_Masithuthuke_Accolades.html">Masithuthuke Accolades</a></li>
+                    <li><a href="Archive_CSRI_Foundation.html">CSR/I(foundation)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1 style="padding: 0px;" class="pd">Project Details </h1>
+    <div class="container-lebo">
+        
+
+        <!-- Button group for chart selection -->
+        <div class="buttons">
+            <div class="dropdown">
+                <label for="projects">Select Project:</label>
+                <select id="projects">
+                    <option value="project1">Service Seta Work Readiness</option>
+                    <option value="project2">FRA Learnership</option>
+                    <option value="project3">Ingwe Learnership</option>
+                    <option value="project4">AET Training</option>
+                    <option value="project5">Institute of African Royalty</option>
+                    <option value="project6">FASSET Digital Skills</option>
+                    <option value="project7">IDC Township Energy Fund</option>
+                </select>
+            </div>
+            <button onclick="changeChartType('bar')">Bar Graph</button>
+            <button onclick="changeChartType('line')">Line Graph</button>
+            <button onclick="changeChartType('pie')">Pie Chart</button>
+        </div>
+
+        <!-- Project details table -->
+        <table class="project-table" style="border-color: #000000;">
+            <tr class="tr">
+                <th class="empty"></th>
+                <th>Progress</th>
+                <th>Outstanding Payments</th>
+                <th>Performance/Deliverables</th>
+                <th>Total Number of Learners</th>
+                <th>Total Drop-outs</th>
+            </tr>
+            <tr>
+                <th>Complete</th>
+                <td id="progressCompleted"></td>
+                <td id="paymentsCompleted"></td>
+                <td id="performanceCompleted"></td>
+                <td id="totalLearnersCompleted"></td>
+                <td id="totalDropoutsCompleted"></td>
+            </tr>
+            <tr>
+                <th>Remaining</th>
+                <td id="progressRemaining"></td>
+                <td id="paymentsRemaining"></td>
+                <td id="performanceRemaining"></td>
+                <td id="totalLearnersRemaining"></td>
+                <td id="totalDropoutsRemaining"></td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td id="progressTotal"></td>
+                <td id="paymentsTotal"></td>
+                <td id="performanceTotal"></td>
+                <td id="totalLearnersTotal"></td>
+                <td id="totalDropoutsTotal"></td>
+            </tr>
+        </table>        
+    </div>
+    <div class="dashboard-lebo">
+        <div class="chart-container" >
+            <canvas id="progressChart"></canvas>
+            <p id="progressAmount" class="total-amount"></p>
+            PROGRESS
+        </div>
+        <div class="chart-container">
+            <canvas id="paymentsChart"></canvas>
+            <p id="paymentsAmount" class="total-amount"></p>
+            PAYEMENTS
+        </div>
+        <div class="chart-container">
+            <canvas id="performanceChart"></canvas>
+            <p id="performanceAmount" class="total-amount"></p>
+            PERFORMANCE
+        </div>
+    </div>
+</body>
+
+<script src="Javascript.js"></script>
+<script src="debug.js"></script> <!-- Link to your JS file -->
+</html>

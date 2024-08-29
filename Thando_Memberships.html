@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masithuthuke Holdings</title>
+    <link rel="stylesheet" href="CSS.css">
+    <style>
+        body {
+            background-color: #d4edda; /* Light green background */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /*background-image: url('foundation-banner.jpg'); /* Replace with your image path */
+            background-repeat: unset;
+            background-size: 40%; /* Adjust size of the background image */
+            background-position: center; /* Adjust position of the background image */
+            opacity: 0.9999999999; /* Adjust opacity for the watermark effect */
+        }
+
+        header, nav {
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 150px); /* Adjust height considering header and nav */
+            text-align: center;
+            color: green; /* Text color for the paragraph */
+        }
+
+        .slideshow-container {
+            position:center;
+            max-width:fit-content; /* Adjust as needed */
+            height: 400px; /* Adjust height as needed */
+            overflow: hidden; /* Hide overflow to create the slide effect */
+            margin-bottom: 100px; /* Space between slideshow and buttons */
+        }
+
+        .slide {
+            display:contents;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 87%;
+            height: 95%;
+        }
+
+        .slide img {
+            max-width: 100%; /* Ensure images don't exceed container width */
+            max-height: 100%; /* Ensure images don't exceed container height */
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+    <script src="Javascript.js" defer></script>
+</head>
+<body style="background-color: white !important;">
+
+    <header style="padding: 0 !important; background-color: white !important; display: flex !important; align-content:center; justify-content: space-between">
+        <h1 style="padding-left: 30px;"><img src="https://masithuthukeholdings.co.za/wp-content/uploads/2021/08/MASI_HOLDINGS-LOGO_199.png" width="100%" height="100px" alt="masithuthuke Holdings"></h1>
+        <h3 class="headings" style="color: #000000 !important; padding-top: 40px;"></h3>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="Thando.html">HOME</a></li>
+            <li><a href="loging.html">USER</a></li>
+            <li class="dropdown"><a href="#">Company Profile</a>
+                <ul class="dropdown-content">
+                    <li><a href="Thando_comp_reg.html">Company Registration </a></li>
+                    <li><a href="Thando_BBBEE.html">BBBEE </a></li>
+                    <li><a href="Thando_Tax.html">Tax Certificate </a></li>
+                    <li><a href="Thando_CSD.html">CSD </a></li>
+                    <li><a href="Thando_Holdings.html">Holdings Profile </a></li>
+                    <li><a href="Thando_Foundation.html">Foundation Profile </a></li>
+                    <li><a href="Thando_Learning.html">Learning Profile </a></li>
+                    <li><a href="Thando_UIF.html">UIF registration </a></li>
+                    <li><a href="Thando_AUDITED.html">Audited Financials </a></li>
+                    <li><a href="Thando_Memberships.html">Memberships </a></li>
+                    <li><a href="Thando_Board.html">Governing Board </a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">Accreditations</a>
+                <ul class="dropdown-content">
+                    <li><a href="Thando_QCTO.html">QCTO </a></li>
+                    <li><a href="Thando_SACAI.html">SACAI </a></li>
+                    <li><a href="Thando_UMALUSI.html">UMALUSI </a></li>
+                    <li><a href="Thando_DHET.html">DHET </a></li>
+                    <li><a href="Thando_IEB.html">IEB </a></li>
+                    <li><a href="Thando_SERVICES_SETA.html">SERVICES SETA </a></li>
+                    <li><a href="Thando_MICT.html">MICT </a></li>
+                    <li><a href="Thando_AGRI_SETA.html">AGRI SETA </a></li>
+                    <li><a href="Thando_ETDP_SETA.html">ETDP SETA </a></li>
+                    <li><a href="Thando_W&R_SETA.html">W&R SETA </a></li>
+                    <li><a href="Thando_BANK_SETA.html">BANK SETA </a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <h3 class="headings"> MEMBERSHIPS </h3>
+
+
+    <main>
+        <div class="slideshow-container">
+            <div class="slide">
+                <h3> SERVICES SETA WORK READINESS</h3>
+                <img src="Service_Seta_Work_Readiness.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <h3> FRA LEARNERSHIP</h3>
+                <img src="FRA.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <h3>INGWE LEARNERSHIP</h3>
+                <img src="INGWE.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <h3> AET TRAINING</h3>
+                <img src="AET.jpg" alt="Slide 4">
+            </div>
+            <div class="slide">
+                <h3> INSTITUE OF AFRICAN ROYALTY</h3>
+                <img src="IOAR.jpg" alt="Slide 5">
+            </div>
+            <div class="slide">
+                <h3> FASSET DIGITAL SKILLS</h3>
+                <img src="Fasset.jpg" alt="Slide 6">
+            </div>
+            <div class="slide">
+                <h3> IDC TOWNSHIP ENERGY</h3>
+                <img src="IDC.jpg" alt="Slide 7">
+            </div>
+            <!-- Add more slides as needed -->
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </main>
+    
+    <body>
+    <!-- Your existing HTML content -->
+
+    <!-- Background audio -->
+    <audio id="backgroundAudio" loop>
+        <source src="Audio.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
+</body>
+</html>
